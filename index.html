@@ -9,71 +9,74 @@
     <p>Arbeitsverzeichnins:</p>
     <p style="color: red; font-weight: bold;">setwd("I:/datenanalyse/daten") (Achtung:I ändert sich je nach Verlauf)</p>
     <p style="color: red; font-weight: bold;">load("I:/datenanalyse/daten/mietspiegel.rda")</p>
-<p></p>
+<br>
     <p>Alle Objekte im Arbeitsspeicher entfernen:</p>
     <p style="color: red; font-weight: bold;"> rm(list = ls())</p>
-<p></p>  
+<br>
     <p style="color:blue; font-weight: bold;"> Variablen klassifizieren: </p>
     <p>stetig: Stetige Variabeln sind jene beliebige WErte, di innerhalb eines Intervalls als Ausprägung möglich sind</p>
     <p>z.B. Körpergröße, Dollar/Eurokurs, Einkommen;</p>
-<p></p>  
+<br> 
     <p>diskrete Variablen: Eine Variable ist diskret, wenn sie nur endlich viele Werte besitzt oder wenn zwar beliebig viele Werte möglich sind, diese aber abzählbar sind.</p> 
     <p>z.B. Geschlecht, Schulausbildung, Bewertungsskala; </p>
-<p></p>
+<br>
     <p style="color:blue; font-weight: bold;"> Bestimmung der Skalenniveaus</p>
     <p>Skalenniveau kann vereinfacht ausgedrückt beschreiben, wie "gut" die Werte einer Variable in Zahlen ausgedrückt werden kann und wie weit diese Sinnhaft sind. </p>
-<p></p>   
+<br>  
     <p>Nominalskala: Eine Variable heißt nominalskaliert, wenn ihre Werte nicht in eine Rangordung gebracht werden können. Nominalskalierte Werte sind diskret.</p> 
     <p>z.B. Geschlecht, Farbe, Religion;</p> 
-<p></p>
+<br>
     <p> Ordinalskala: Die Werte können in eine Rangordung gebracht werden. Ordinalskalierte Werte sind auch diskret.</p>
     <p>z.B. Schulnoten, Schulbildung, Beurteilungsskala; </p>
-<p></p>
+<br>
     <p>Metrisches Merkmal: Bei metrischen Merkmalen sind die Mermalsausprägungen Zahlen im eigenrlichen Sinn.</p> 
     <p>Damit könnnen die Ausprägungen nicht nur geordnet, sondern auch Abstände gebildet und interpretiert werden. Stetige Variablen sind immer Metrisch.
     <p>Intervallskala: Zwischen Merkmale können Abstände gebildet werden, es gibt aber keinen sinnvollen Nullpunkt
     <p>z.B. Temperatur
     <p>Verhältnisskala: es gibt einen sinnvollen Nullpunkt 
-<p></p>
+<br>
     <p>R codes: </p>
     <p style="color: red; font-weight: bold;">head(datensatz ohne dem was hinter dem Punkt steht)</p>
     <p style="color: red; font-weight: bold;">z.B. head(mietspiegel) - gibt die ersten 6 Reihen an </p>
     <p style="color: red; font-weight: bold;">str(mietspiegel)</p>
     <p style="color: red; font-weight: bold;">summary()</p>
-<p></p>
+<br>
     <p>Arithmetisches Mittel </p>
     <p>gibt an, welchen Wert ein Merkmal im Durschschnitt annimmt, reagiert stark auf einzelne extreme Beobachtungen, außreiserempfindlich</p>
-<p></p>    
+<br>    
     <p>Median</p>
     <p>Ist das 50% Quantil, Robust gegen Außreiser und das Zentrum der Daten</p> 
-    <p></p>
+<br>
     <p> Minimum </p>
     <p>Kleineste Beobachtung; kleinster Wert im datensatz</p>
-    <p></p>
+<br>
     <p>Maximum</p> 
     <p>Größte Beobachtung; höchster Wert im Datensatz</p>
-    <p></p>
+<br>
     <p>Empirische Varianz</p> 
     <p>Durchschnittliche Abweichung der Daten vom Mittelwert</p>
     <p style="color: red; font-weight: bold;">var()</p>
-    <p></p>
+<br>
     <p>Standartabweichung</p>
     <p>Durchschnittliche Streuung um den Mittelwert; ausreißersensintiv</p>
     <p style="color: red; font-weight: bold;">sd()</p>
-    <p></p>
+<br>
     <p>Graphische Darstellungsmöglichkeiten</p>
     <p>stetige Variable: Boxplot oder Histogramm </p>
-    <p></p>
+<br>
     <p>Histogramm</p>
     <p>gut geeignet zur graphischen Beschreibung von Verteilungen, beurteilung der Schiefe/Symmetrie</p>
-    <p>Bestimmung des Modus/ der Modalklasse (unimodal,bimodal,multimodal</p>)
-    <p></p>
+    <p>Bestimmung des Modus/ der Modalklasse (unimodal,bimodal,multimodal)</p>
+<br>
     <p>R:</p> 
     <p style="color: red; font-weight: bold;">par(mfrow = c(1,2))</p>
     <p style="color: red; font-weight: bold;">hist(mietspiegel$miete, xlab = "Miete", ylab = "Dichte", main = "Miete", freq = FALSE)</p>
-    <p></p>
+<br>
     <p>xlab=Beschriftung der x-Achse, ylab=Beschriftung der y-Achse, main=Überschrift</p> 
-    <p></p>
+<br>
     <p>Boxplot</p>
     <p>graphische Darstellung aureißerrobuster Kennzahlen, gut geeignet zum Vergleich von Verteilung</p>
     <p></p>
+    
+</body>
+</html>
