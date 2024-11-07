@@ -7,20 +7,20 @@
 <body>
     <h1>Statistik test1</h1>
     <p>Arbeitsverzeichnins:</p>
-    <p>setwd("I:/datenanalyse/daten") (Achtung:I ändert sich je nach Verlauf)</p>
-    <p>load("I:/datenanalyse/daten/mietspiegel.rda")</p>
+    <p style="color: purple;">setwd("I:/datenanalyse/daten") (Achtung:I ändert sich je nach Verlauf)</p>
+    <p style="color: purple;">load("I:/datenanalyse/daten/mietspiegel.rda")</p>
 <p></p>
     <p>Alle Objekte im Arbeitsspeicher entfernen:</p>
-    <p> rm(list = ls())</p>
+    <p style="color: purple;"> rm(list = ls())</p>
 <p></p>  
-    <p> Variablen klassifizieren: </p>
-    <p> stetig: Stetige Variabeln sind jene beliebige WErte, di innerhalb eines Intervalls als Ausprägung möglich sind</p>
+    <p style="color:blue;"> Variablen klassifizieren: </p>
+    <p>stetig: Stetige Variabeln sind jene beliebige WErte, di innerhalb eines Intervalls als Ausprägung möglich sind</p>
     <p>z.B. Körpergröße, Dollar/Eurokurs, Einkommen;</p>
 <p></p>  
     <p>diskrete Variablen: Eine Variable ist diskret, wenn sie nur endlich viele Werte besitzt oder wenn zwar beliebig viele Werte möglich sind, diese aber abzählbar sind.</p> 
     <p>z.B. Geschlecht, Schulausbildung, Bewertungsskala; </p>
 <p></p>
-    <p> Bestimmung der Skalenniveaus</p>
+    <p style="color:aquamarine,"> Bestimmung der Skalenniveaus</p>
     <p>Skalenniveau kann vereinfacht ausgedrückt beschreiben, wie "gut" die Werte einer Variable in Zahlen ausgedrückt werden kann und wie weit diese Sinnhaft sind. </p>
 <p></p>   
     <p>Nominalskala: Eine Variable heißt nominalskaliert, wenn ihre Werte nicht in eine Rangordung gebracht werden können. Nominalskalierte Werte sind diskret.</p> 
@@ -36,10 +36,10 @@
     <p>Verhältnisskala: es gibt einen sinnvollen Nullpunkt 
 <p></p>
     <p>R codes: </p>
-    <p>head(datensatz ohne dem was hinter dem Punkt steht)</p>
-    <p>z.B. head(mietspiegel) - gibt die ersten 6 Reihen an </p>
-    <p>str(mietspiegel)</p>
-    <p>summary()</p>
+    <p style="color: purple;">head(datensatz ohne dem was hinter dem Punkt steht)</p>
+    <p style="color: purple;">z.B. head(mietspiegel) - gibt die ersten 6 Reihen an </p>
+    <p style="color: purple;">str(mietspiegel)</p>
+    <p style="color: purple;">summary()</p>
 <p></p>
     <p>Arithmetisches Mittel </p>
     <p>gibt an, welchen Wert ein Merkmal im Durschschnitt annimmt, reagiert stark auf einzelne extreme Beobachtungen, außreiserempfindlich</p>
@@ -55,11 +55,11 @@
     <p></p>
     <p>Empirische Varianz</p> 
     <p>Durchschnittliche Abweichung der Daten vom Mittelwert</p>
-    <p>var()</p>
+    <p style="color: purple;">var()</p>
     <p></p>
     <p>Standartabweichung</p>
     <p>Durchschnittliche Streuung um den Mittelwert; ausreißersensintiv</p>
-    <p>sd()</p>
+    <p style="color: purple;">sd()</p>
     <p></p>
     <p>Graphische Darstellungsmöglichkeiten</p>
     <p>stetige Variable: Boxplot oder Histogramm </p>
@@ -69,8 +69,8 @@
     <p>Bestimmung des Modus/ der Modalklasse (unimodal,bimodal,multimodal</p>)
     <p></p>
     <p>R:</p> 
-    <p>par(mfrow = c(1,2))</p>
-    <p>hist(mietspiegel$miete, xlab = "Miete", ylab = "Dichte", main = "Miete", freq = FALSE)</p>
+    <p style="color: purple;">par(mfrow = c(1,2))</p>
+    <p style="color: purple;">hist(mietspiegel$miete, xlab = "Miete", ylab = "Dichte", main = "Miete", freq = FALSE)</p>
     <p></p>
     <p>xlab=Beschriftung der x-Achse, ylab=Beschriftung der y-Achse, main=Überschrift</p> 
     <p></p>
@@ -80,4 +80,3 @@
     
 </body>
 </html>
-
