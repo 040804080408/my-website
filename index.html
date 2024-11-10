@@ -9,9 +9,10 @@
     <p>Arbeitsverzeichnins:</p>
     <p style="color: red; font-weight: bold;">setwd("I:/datenanalyse/daten") (Achtung:I ändert sich je nach Verlauf)</p>
     <p style="color: red; font-weight: bold;">load("I:/datenanalyse/daten/mietspiegel.rda")</p>
-<br>
     <p>Alle Objekte im Arbeitsspeicher entfernen:</p>
     <p style="color: red; font-weight: bold;"> rm(list = ls())</p>
+    <p>Falsche bzw überschüssige Werte entfernen </p>
+
 <br>
     <p style="color:blue; font-weight: bold;"> Variablen klassifizieren: </p>
     <p>stetig: Stetige Variabeln sind jene beliebige WErte, di innerhalb eines Intervalls als Ausprägung möglich sind</p>
@@ -67,7 +68,6 @@
     <p>Histogramm</p>
     <p>gut geeignet zur graphischen Beschreibung von Verteilungen, beurteilung der Schiefe/Symmetrie</p>
     <p>Bestimmung des Modus/ der Modalklasse (unimodal,bimodal,multimodal)</p>
-<br>
     <p>R:</p> 
     <p style="color: red; font-weight: bold;">par(mfrow = c(1,2))</p>
     <p style="color: red; font-weight: bold;">hist(mietspiegel$miete, xlab = "Miete", ylab = "Dichte", main = "Miete", freq = FALSE)</p>
@@ -76,7 +76,47 @@
 <br>
     <p>Boxplot</p>
     <p>graphische Darstellung aureißerrobuster Kennzahlen, gut geeignet zum Vergleich von Verteilung</p>
-    <p></p>
+    <p>Gut geeignet zum Vergleich von Vereilungen </p>
+    <p>Auffinden von Außreisern </p>
+    <p style="color: red; font-weight: bold;">boxplot(daten$spz.datensatz, main="miete")</p>
+<br>
+    <p style="color:blue; font-weight: bold;"> Diskerte Mermale</p>
+    <p> Absolute und relative Häufigkeiten</p>
+    <p> Schwach besetzte Kategorien</p>
+<br>
+    <p> Fehlende Werte, Datenfehler herauslöschen</p>
+    <p style="color: red; font-weight: bold;"> sum(is.na())</p>
+<br>
+    <p> Absolute Häufigkeiten</p>
+    <p style="color: red; font-weight: bold;"> table(daten$spez. datensatz)</p>
+<br>   
+    Relative Häufigkeiten 
+    <p style="color:red; font-weight: bold;"> prop.table(table(daten$ spz.datensatz))</p>
+<br>
+    <p>Säulendiagramm</p>
+    <p style="color: red;font-weight: bold;"> plot(daten$ spz.datensatz, main="Überschrift") </p>
+<br> 
+    <p>Kreisdiagramm</p>
+    <p style="color: red;font-weight: bold;"> pie(table(daten$spz.datensatz), main="Überschrift", col=gray.colors(Anzahl der Kategorien)) </p>
+<br>
+    <p style="color:blue; font-weight: bold;"> Zusammenhangsanalyse von dikreten und stetigen Variablen (~)</p>
+    <p style="color:red; font-weight: bold;"> plot(spz.datensatz1~spz.datensatz2, data=daten, main="Überschrift") </p>
+<br>
+    <p> Zusammenhang Darstellungsmöglichkeiten</p>
+    <p style="color: red; font-weight: bold;"> tapply(daten$spz.datensatz, daten$spz.datensatz, summary)</p>
+<br>
+    <p style="color: blue; font-weight: bold;"> Konfidenzintervalle </p>
+    <p> Schätzer bestimmen</p>
+    <p style="color: red; font-weight: bold;"> x_bar - mean(daten$spz.datensatz) </p>
+    <p> Standartabweichung </p>
+    <p style="color: red; font-weight: bold;"> s-(daten$sp.datensatz)</p>
+    <p> Standartfehler (je kleiner, desto besser für die Grundgesamtheit) </p>
+    <p style="color: red; font-weight: bold;"> se - s/sqrt (n) 
+    <p> um n zu wissen: </p><p style="color: red; font-weight: bold;">length(mietspiegel$miete)</p>
+
+    </p>
+
+
     
 </body>
 </html>
