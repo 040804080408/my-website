@@ -11,7 +11,6 @@
     <p style="color: red; font-weight: bold;">load("I:/datenanalyse/daten/mietspiegel.rda")</p>
     <p>Alle Objekte im Arbeitsspeicher entfernen:</p>
     <p style="color: red; font-weight: bold;"> rm(list = ls())</p>
-    <p>Falsche bzw überschüssige Werte entfernen </p>
 
 <br>
     <p style="color:blue; font-weight: bold;"> Variablen klassifizieren: </p>
@@ -97,7 +96,7 @@
     <p style="color: red;font-weight: bold;"> plot(daten$ spz.datensatz, main="Überschrift") </p>
 <br> 
     <p>Kreisdiagramm</p>
-    <p style="color: red;font-weight: bold;"> pie(table(daten$spz.datensatz), main="Überschrift", col=gray.colors(Anzahl der Kategorien)) </p>
+    <p style="color: red;font-weight: bold;"> pie(table(daten$spz.datensatz), main="Überschrift", col=gray.colors(Anzahl der Kategorien))      funktioniert auch ohne col</p>
 <br>
     <p style="color:blue; font-weight: bold;"> Zusammenhangsanalyse von dikreten und stetigen Variablen (~)</p>
     <p style="color:red; font-weight: bold;"> plot(spz.datensatz1~spz.datensatz2, data=daten, main="Überschrift") </p>
@@ -113,7 +112,18 @@
     <p> Standartfehler (je kleiner, desto besser für die Grundgesamtheit) </p>
     <p style="color: red; font-weight: bold;"> se - s/sqrt (n) 
     <p> um n zu wissen: </p><p style="color: red; font-weight: bold;">length(mietspiegel$miete)</p>
-
+    <p> Untergrenze </p>
+    <p style="color: red; font-weight: bold;"> ug - (x_bar-qt(0.995,n-1)*se) </p>
+    <p> Varianz bekannt</p>
+    <p style="color: red;font-weight: bold;"> ug - (x_bar-qnorm(0.995)*se) </p>
+    <p> Obergrenze </P>
+    <p style="color: red;font-weight: bold;"> og - (x_bar+qt(0.955,n-1)*se)</p>
+    <p> Varianz bekannt</p>
+    <p style="color: red; font-weight: bold;"> og- (x_bar+qnorm(0.995)+se)</p>
+    <p> Darstellung</p>
+    <p style="color: red;font-weight: bold;"> c (ug,og)</p>
+    <p style="color: blue; font-weight: bold;"> Interpretation der KI</p>
+      
     </p>
 
 
